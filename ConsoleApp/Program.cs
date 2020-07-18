@@ -26,5 +26,14 @@ namespace ConsoleApp
         {
             return value1 * value2;
         }
+
+        static int GetRestOfDivisionOfTwoNumber(int dividend, int divisor)
+        {
+            int result;
+
+            Math.DivRem(dividend, divisor, out result);
+
+            return result;
+        }
     }
 }
